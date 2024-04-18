@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 :root {
+  --color-bg: #f0f1f6;
   --color-white: #FFF;
   --color-cyan: #2acfcf;
-  --color-violet: hsl(257, 27%, 26%);
+  --color-violet: #3b3054;
   --color-red: hsl(0, 87%, 67%);
-  --color-gray-1: hsl(0, 0%, 75%);
-  --color-gray-2: hsl(257, 7%, 63%);
-  --color-gray-3: hsl(255, 11%, 22%);
-  --color-gray-4: hsl(260, 8%, 14%); }
+  --color-gray-1: #bfbfbf;
+  --color-gray-2: #9e9aa7;
+  --color-gray-3: #35323e;
+  --color-gray-4: #232127; }
 
 * {
   margin: 0;
@@ -20,7 +21,8 @@ html {
 body {
   font-family: "Poppins";
   font-size: 1.125rem;
-  font-weight: 500; }
+  font-weight: 500;
+  background-color: var(--color-bg); }
 
 main {
   position: relative;
@@ -343,3 +345,72 @@ main {
     background-color: var(--color-cyan);
     color: var(--color-white);
     word-spacing: .5px; } }
+
+@media only screen and (min-width: 75em) and (max-width: 112.4em) {
+  .stats__outer {
+    padding: 10.4em 14.5em; }
+  .stats-cards__container {
+    display: flex;
+    margin-top: 10em;
+    justify-content: space-between;
+    position: relative; }
+  .stats-header {
+    text-align: center; }
+    .stats-header-headline {
+      font-size: 3.8rem; }
+    .stats-header-text {
+      font-size: 1.8rem;
+      max-width: 52rem;
+      margin: 1em auto 0 auto; }
+  .stats-cards-item {
+    position: relative;
+    background-color: var(--color-white);
+    max-width: 35rem;
+    max-height: 26rem;
+    padding: 6.3em 3em; }
+    .stats-cards-item:nth-child(1) {
+      top: 0em; }
+    .stats-cards-item:nth-child(3) {
+      top: 4em; }
+    .stats-cards-item:nth-child(5) {
+      top: 8em; }
+      .stats-cards-item:nth-child(5) > div.stats-cards-item__icon {
+        left: 3.1rem;
+        top: -4.4em; }
+      .stats-cards-item:nth-child(5) > .stats-cards-item__icon > img {
+        left: 2rem;
+        top: 2rem; }
+    .stats-cards-item__icon {
+      position: absolute;
+      z-index: 4;
+      background-color: var(--color-violet);
+      position: absolute;
+      top: -4.33em;
+      left: 3.45rem;
+      height: 87px;
+      width: 87px;
+      border-radius: 100px; }
+      .stats-cards-item__icon > img {
+        position: relative;
+        left: 2.27rem;
+        top: 2.5rem; }
+    .stats-cards-item__headline {
+      font-size: 2.2rem; }
+    .stats-cards-item__text {
+      margin-top: 1em;
+      font-size: 1.3em;
+      line-height: 2.56rem; }
+  .stats-divider-1 {
+    position: absolute;
+    height: 1rem;
+    width: 4rem;
+    top: 13em;
+    left: 31em;
+    background-color: var(--color-cyan); }
+  .stats-divider-2 {
+    position: absolute;
+    height: 1rem;
+    width: 4rem;
+    top: 13em;
+    left: 65em;
+    background-color: var(--color-cyan); } }
