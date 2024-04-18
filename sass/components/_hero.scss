@@ -31,13 +31,8 @@
       color: var(--color-gray-2);
     }
     &-btn{
-      font-size: 2rem;
-      padding: 1.2rem 3.7rem;
-      font-weight:700;
-      border-radius:2rem;
+      @include buttons-rad2();
       min-width: 19.4rem;
-      background-color: var(--color-cyan);
-      color:var(--color-white);
     }
   }
 }
@@ -59,15 +54,10 @@
     }
     // *ELEMENTS
     &-btn{
-      font-size: 2.4rem;
-      padding: .4em 1.5em;
-      border-radius: 2.5rem;
-      background-color: var(--color-red);
-      color: var(--color-white);
-      border: none;
+      @include button-hero--mobile();
     }
     &-text {
-      margin: .8em auto 2em auto;
+      margin: .8em auto 2.2em auto;
       font-size: 1.82rem;
     }
     &-headline{
