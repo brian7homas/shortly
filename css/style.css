@@ -21,8 +21,7 @@ html {
 body {
   font-family: "Poppins";
   font-size: 1.125rem;
-  font-weight: 500;
-  background-color: var(--color-bg); }
+  font-weight: 500; }
 
 main {
   position: relative;
@@ -254,6 +253,7 @@ main {
     border-radius: 2rem;
     background-color: var(--color-cyan);
     color: var(--color-white);
+    border: none;
     min-width: 19.4rem; } }
 
 @media only screen and (max-width: 37.5em) {
@@ -293,7 +293,12 @@ main {
 
 @media only screen and (min-width: 75em) and (max-width: 112.4em) {
   .url__outer {
-    padding: 0 14.7em; }
+    padding: 0 14.7em;
+    background: #f0f1f6;
+    background: -moz-linear-gradient(0deg, #f0f1f6 48%, white 48%);
+    background: -webkit-linear-gradient(0deg, #f0f1f6 48%, white 48%);
+    background: linear-gradient(0deg, #f0f1f6 48%, white 48%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f1f6",endColorstr="#ffffff",GradientType=1); }
   .url-form {
     background-color: var(--color-violet);
     padding: 5em 5em 4.7em 5.6em;
@@ -348,7 +353,8 @@ main {
 
 @media only screen and (min-width: 75em) and (max-width: 112.4em) {
   .stats__outer {
-    padding: 10.4em 14.5em; }
+    background-color: var(--color-bg);
+    padding: 10.4em 14.5em 19em 14.5em; }
   .stats-cards__container {
     display: flex;
     margin-top: 10em;
@@ -414,3 +420,28 @@ main {
     top: 13em;
     left: 65em;
     background-color: var(--color-cyan); } }
+
+@media only screen and (min-width: 75em) and (max-width: 112.4em) {
+  .boost__outer {
+    background: var(--color-violet) url("/images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .boost__inner {
+    max-width: 1119px;
+    margin: 0 auto; }
+  .boost__contents {
+    color: var(--color-white);
+    text-align: center;
+    padding: 5em 0; }
+  .boost-headline {
+    font-size: 3.8rem; }
+  .boost-cta {
+    font-family: "Poppins";
+    font-size: 2rem;
+    padding: 1.2rem 3.7rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    background-color: var(--color-cyan);
+    color: var(--color-white);
+    border: none;
+    margin-top: 1.4em; } }
