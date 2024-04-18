@@ -102,15 +102,27 @@
   </header>
   <!-- *MAIN CONTENT -->
   <main>
+    <!-- *HERO -->
     <div class="hero__outer">
       <div class="hero__inner">
         <img class="hero-image" src="images/illustration-working.svg" alt="Illustration of person working">
         <section class="hero__content">
-          <h1 class="hero-headline">More than just shorter links.</h1>
+          <h1 class="hero-headline">More than just <span class="hero-headline__line-2">shorter links.</span> </h1>
           <p class="hero-text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
           <button type="button" class="hero-btn">Get Started</button>
         </section>
       </div>
+    </div>
+    <!-- *URL FORM -->
+    <div class="url__outer" id="url">
+        <div class="url__inner">
+          <form action="#url" class="url-form">
+            <label>
+              <input type="text" for="url" placeholder="Shorten a link here..." class="url-input">
+            </label>
+            <button type="submit" class="url-btn">Shorten it!</button>
+          </form>
+        </div>
     </div>
   </main>
   <script type="module" src="js/app.js"></script>
