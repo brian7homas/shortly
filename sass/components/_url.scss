@@ -4,6 +4,11 @@
   .url {
     &__outer {
       padding: 0 14.7em;
+      background: rgb(240,241,246);
+      background: -moz-linear-gradient(0deg, rgba(240,241,246,1) 48%, rgba(255,255,255,1) 48%);
+      background: -webkit-linear-gradient(0deg, rgba(240,241,246,1) 48%, rgba(255,255,255,1) 48%);
+      background: linear-gradient(0deg, rgba(240,241,246,1) 48%, rgba(255,255,255,1) 48%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f1f6",endColorstr="#ffffff",GradientType=1);
     }
 
     // *ELS
