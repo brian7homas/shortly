@@ -39,8 +39,12 @@
       and (hover: none)
       { @content };
   }
+  //* wide screens
+  @if $breakpoint == wide-screens {
+    @media only screen and  (max-width: 112.4em){ @content };
+  }
   @if $breakpoint == big-desktop {
       @media only screen and  (min-width: 112.5em){ @content };
   }
+  
 }
-                                
