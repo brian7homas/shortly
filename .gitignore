@@ -1,4 +1,5 @@
 node_modules
 style-guide.md
 pnpm-lock.yaml
-settings.json
+.vscode
+.DS_Store

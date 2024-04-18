@@ -5,10 +5,6 @@ class MobileNavigation {
     this.iconMiddle = document.querySelector('.header-links__mobile-icon__middle')
     this.linkList = document.querySelector('.header-links__list')
     this.events()
-    
-    console.log(this.hamburger)
-    console.log(this.icon)
-    console.log(this.iconMiddle)
   }
   events(){
     this.hamburger.addEventListener('click', () => this.openMobileNav())
