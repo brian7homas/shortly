@@ -1,7 +1,8 @@
 @include respond-to(wide-screens){
   .stats{
     &__outer{
-      padding:10.4em 14.5em;
+      background-color: var(--color-bg);
+      padding:10.4em 14.5em 19em 14.5em;
     }
     &__inner{}
     &-cards__container{
