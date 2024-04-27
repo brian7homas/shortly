@@ -1,4 +1,4 @@
-@include respond-to(wide-screens){
+@include respond-to(tablet-screens){
   .footer{
     &__outer{
       background-color: var(--color-black);

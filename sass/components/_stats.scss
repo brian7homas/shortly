@@ -1,4 +1,4 @@
-@include respond-to(wide-screens){
+@include respond-to(tablet-screens){
   .stats{
     &__outer{
       background-color: var(--color-bg);
@@ -7,10 +7,10 @@
     &__inner{}
     &-cards__container{
       display:flex;
-      margin-top:9.4em;
+      margin:9.4em auto 0 auto;
       justify-content: space-between;
       position: relative;
-      
+      max-width: 1119px;
     }
     
     &-header{

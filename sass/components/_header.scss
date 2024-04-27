@@ -54,9 +54,9 @@
         &::before{
             content:"";
             position: absolute;
-            top:0;
-            left:0;
-            width:20px;
+            top:1.5px;
+            left:-1px;
+            width:24px;
             height:3px;
             background-color:var(--color-gray-4);
             transform-origin: 0 0;
@@ -64,9 +64,9 @@
         }
         &__middle{
             position: absolute;
-            top:8px;
-            left:0;
-            width:20px;
+            top:10.2px;
+            left:-1px;
+            width:24px;
             height:3px;
             background-color:var(--color-gray-4);
             transition: all .25s ease-in-out;
@@ -75,9 +75,9 @@
         &::after{
             content: "";
             position: absolute;
-            bottom:0;
-            left:0;
-            width:20px;
+            bottom:-3.5px;
+            left:-1px;
+            width:24px;
             height:3px;
             background-color:var(--color-gray-4);
             transform-origin: 100% 0;
