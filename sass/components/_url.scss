@@ -1,4 +1,4 @@
-@include respond-to(wide-screens) {
+@include respond-to(tablet-screens) {
 
   // *CONTAINERS
   .url {
@@ -36,7 +36,7 @@
 
 }
 
-@include respond-to(phone) {
+@include respond-to(mobile-screens) {
   // *CONTAINERS
   .url {
     &__outer {
@@ -46,7 +46,7 @@
     // *ELS
     &-form {
       background-color: var(--color-violet);
-      padding: 2.3em 2.1em;
+      padding: 1.9em 2.1em;
       border-radius: 1.2rem;
     }
 

@@ -1,4 +1,4 @@
-@include respond-to(wide-screens){
+@include respond-to(tablet-screens){
   .boost{
     &__outer{
       background:var(--color-violet) url('/images/bg-boost-desktop.svg');
