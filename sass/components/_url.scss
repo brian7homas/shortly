@@ -1,0 +1,109 @@
+@include respond-to(desktop-screens) {
+
+  // *CONTAINERS
+  .url {
+    &__outer {
+      padding: 0 14.7em;
+      background: rgb(240,241,246);
+      background: -moz-linear-gradient(0deg, rgba(240,241,246,1) 48%, rgba(255,255,255,1) 48%);
+      background: -webkit-linear-gradient(0deg, rgba(240,241,246,1) 48%, rgba(255,255,255,1) 48%);
+      background: linear-gradient(0deg, rgba(240,241,246,1) 48%, rgba(255,255,255,1) 48%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f1f6",endColorstr="#ffffff",GradientType=1);
+    }
+
+    // *ELS
+    &-form {
+      background-color: var(--color-violet);
+      padding: 5em 5em 4.7em 5.6em;
+      border-radius: 1.2rem;
+    }
+
+    &-input {
+      font-size: 2rem;
+      padding: 1.1em 1.6em .9em 1.6em;
+      width:100%;
+      max-width: 38.5em;
+      border-radius: .9rem;
+      letter-spacing: 1.2px;
+      border:none;
+    }
+
+    &-btn {
+      margin-left:2.4rem;
+      @include buttons();
+    }
+  }
+
+}
+
+@include respond-to(tablet-screens) {
+
+  // *CONTAINERS
+  .url {
+    &__outer {
+      padding: 0 3.7em;
+      background: rgb(240,241,246);
+      background: -moz-linear-gradient(0deg, rgba(240,241,246,1) 48%, rgba(255,255,255,1) 48%);
+      background: -webkit-linear-gradient(0deg, rgba(240,241,246,1) 48%, rgba(255,255,255,1) 48%);
+      background: linear-gradient(0deg, rgba(240,241,246,1) 48%, rgba(255,255,255,1) 48%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f1f6",endColorstr="#ffffff",GradientType=1);
+    }
+
+    // *ELS
+    &-form {
+      background-color: var(--color-violet);
+      padding: 5em 5em 4.7em 5.6em;
+      border-radius: 1.2rem;
+      text-align:center;
+    }
+
+    &-input {
+      font-size: 2rem;
+      padding: 1.1em 1.6em .9em 1.6em;
+      width:calc(100% / 1.85);
+      max-width: 38.5em;
+      border-radius: .9rem;
+      letter-spacing: 1.2px;
+      border:none;
+    }
+
+    &-btn {
+      margin-left:2.4rem;
+      @include buttons();
+    }
+  }
+
+}
+
+@include respond-to(mobile-screens) {
+  // *CONTAINERS
+  .url {
+    &__outer {
+      padding: 8em 2em;
+    }
+
+    // *ELS
+    &-form {
+      background-color: var(--color-violet);
+      padding: 1.9em 2.1em;
+      border-radius: 1.2rem;
+    }
+
+    &-input {
+      // font-size: 2rem;
+      width:100%;
+      padding: 1.45rem 1.6rem;
+      font-size: 1.72rem;
+      letter-spacing: 0px;
+      // max-width: 38.5em;
+      border-radius: .9rem;
+      border:none;
+    }
+
+    &-btn {
+      margin-top: .8em;
+      @include button-mobile();
+    }
+  }
+
+}
