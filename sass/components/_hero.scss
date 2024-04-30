@@ -84,6 +84,53 @@
     }
   }
 }
+
+@include respond-to(tablet-screens){
+  .hero{
+    // *CONTAINERS
+    &__outer{
+      max-width: 144rem;
+      margin:0 auto;
+      padding: 12.4em 3.8em 12em 3.8em;
+    }
+    &__inner{
+      display:flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+    &__content{
+      max-width: 75vw;
+      position:relative;
+      z-index: 2;
+    }
+    // *ELS
+    &-image{
+      left:60%;
+      position: absolute;
+      top: 6.6em;
+    }
+    &-headline{
+      font-size: 7.7rem;
+      line-height: 9rem;
+      letter-spacing: -.6px;
+    }
+    &-text{
+      font-size: 2.1rem;
+      width: 100%;
+      color: var(--color-gray-2);
+      margin: .1em 0 1.8em 0;
+      word-spacing: 0.01rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.5px;
+    }
+    &-btn{
+      @include buttons-rad2();
+      min-width: 19.4rem;
+      border-radius:3em;
+      color:#F3FFFE;
+    }
+  }
+}
 @include respond-to(mobile-screens){
   .hero{
     // *CONTAINERS
