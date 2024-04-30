@@ -8,6 +8,14 @@
   }
   
   // * 461px - 1439
+  @if $breakpoint == tablet-screens--portrait {
+    @media only screen 
+    and (orientation: portrait) 
+    and  (min-width: 28.813em)
+    and  (max-width: 89.938em)
+    { @content };
+  }
+  // * 461px - 1439
   @if $breakpoint == tablet-screens {
     @media only screen 
     and  (min-width: 28.813em)
