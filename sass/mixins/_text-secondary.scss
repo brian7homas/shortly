@@ -1,0 +1,5 @@
+@mixin text-secondary($size){
+  font-size: $size;
+  color:var(--color-gray-2);
+  opacity:.8;
+}

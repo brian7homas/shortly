@@ -1,10 +1,13 @@
 :root{
+  --color-bg: #f0f1f6;
   --color-white: #FFF;
+  --color-black: hsl(257, 21%, 14%);
   --color-cyan: #2acfcf;
-  --color-violet: hsl(257, 27%, 26%);
+  --color-violet: #3b3054;
   --color-red: hsl(0, 87%, 67%);
-  --color-gray-1: hsl(0, 0%, 75%);
-  --color-gray-2: hsl(257, 7%, 63%);
-  --color-gray-3: hsl(255, 11%, 22%);
-  --color-gray-4: hsl(260, 8%, 14%);
+  --color-gray-1: #bfbfbf;
+  --color-gray-2: #9e9aa7;
+  --color-gray-3: #35323e;
+  --color-gray-4: #232127;
 }
+

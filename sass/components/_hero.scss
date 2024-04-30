@@ -2,7 +2,9 @@
   .hero{
     // *CONTAINERS
     &__outer{
-      padding: 12.4em 14.8em;
+      max-width: 144rem;
+      margin:0 auto;
+      padding: 12.4em 14.8em 12em 14.8em;
     }
     &__inner{
       display:flex;
@@ -11,12 +13,14 @@
     }
     &__content{
       max-width: 40vw;
+      z-index: 2;
     }
     // *ELS
     &-image{
       right: -11em;
       position: absolute;
       top: 6.6em;
+      z-index: -1;
     }
     &-headline{
       font-size: 7.7rem;
@@ -38,7 +42,101 @@
     }
   }
 }
-@include respond-to(phone){
+@include respond-to(desktop-screens){
+  .hero{
+    // *CONTAINERS
+    &__outer{
+      max-width: 144rem;
+      margin:0 auto;
+      padding: 12.4em 14.8em 12em 14.8em;
+    }
+    &__inner{
+      display:flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+    &__content{
+      max-width: 40vw;
+    }
+    // *ELS
+    &-image{
+      right: -11em;
+      position: absolute;
+      top: 6.6em;
+      z-index: -1;
+    }
+    &-headline{
+      font-size: 7.7rem;
+      line-height: 9rem;
+      letter-spacing: -.6px;
+    }
+    &-text{
+      font-size: 2.1rem;
+      width: 100%;
+      color: var(--color-gray-2);
+      margin: .1em 0 1.8em 0;
+      word-spacing: 0.01rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.5px;
+    }
+    &-btn{
+      @include buttons-rad2();
+      min-width: 19.4rem;
+      border-radius:3em;
+      color:#F3FFFE;
+    }
+  }
+}
+
+@include respond-to(tablet-screens){
+  .hero{
+    // *CONTAINERS
+    &__outer{
+      max-width: 144rem;
+      margin:0 auto;
+      padding: 12.4em 3.8em 12em 3.8em;
+    }
+    &__inner{
+      display:flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+    &__content{
+      max-width: 65vw;
+      position:relative;
+      z-index: 2;
+    }
+    // *ELS
+    &-image{
+      left:40%;
+      position: absolute;
+      top: 6.6em;
+      z-index: -1;
+      transform:scale(.85)
+    }
+    &-headline{
+      font-size: 7.7rem;
+      line-height: 9rem;
+      letter-spacing: -.6px;
+    }
+    &-text{
+      font-size: 2.1rem;
+      width: 100%;
+      color: var(--color-gray-2);
+      margin: .1em 0 1.8em 0;
+      word-spacing: 0.01rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.5px;
+    }
+    &-btn{
+      @include buttons-rad2();
+      min-width: 19.4rem;
+      border-radius:3em;
+      color:#F3FFFE;
+    }
+  }
+}
+@include respond-to(mobile-screens){
   .hero{
     // *CONTAINERS
     &__outer{
@@ -57,23 +155,27 @@
     // *ELEMENTS
     &-btn{
       @include button-hero--mobile();
+      font-size: 2rem;
+      padding:.6em 1.3em;
+      min-width: 19.3rem;
     }
     &-text {
-      margin: .8em auto 2.2em auto;
+      margin: .8em auto 1.7em auto;
       font-size: 1.82rem;
+      line-height:3rem;
     }
     &-headline{
       font-size: 4rem;
       line-height: 4.55rem;
       &__line-2{
-        padding-left: 12.1px;
+        padding-left: 0.2px;
       }
     }
     &-image{
       position: relative;
       z-index: -1;
       width:100%; 
-      margin: 6.9em 0 0 7.7em;
+      margin: 6.8em 0 0 7.5em;
       transform: scale(1.53);
     }
   }

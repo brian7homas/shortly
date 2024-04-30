@@ -1,0 +1,115 @@
+@include respond-to(desktop-screens){
+  .footer{
+    &__outer{
+      background-color: var(--color-black);
+      padding: 5.7em 14em 7em 14em;
+    }
+    &__inner{
+      max-width: 1119px;
+      margin:0 auto;
+    }
+    &__contents{
+      color:var(--color-white);
+      display:flex;
+      justify-content: space-between;
+    }
+    
+    &-links__container{
+      display:flex;
+      flex-grow:1;
+      margin-left: 23.4em;  
+      // margin-right:6.7em;
+      justify-content: space-between;
+    }
+    &-features, &-resources, &-company{
+      h4{
+        font-size:1.5rem;
+        letter-spacing: .05rem;
+      }
+      ul{
+        list-style: none;;
+        width:max-content;
+      }
+      li{
+        font-size: 1.44rem;
+        &:not(:first-child){
+          margin-top:.7em;
+        }
+      }
+      li:first-child {
+        margin-top:1.4em;
+      }
+    }
+    &-resources{
+      margin-left:7em;
+    }
+    &-company{
+      margin-left:9.4em;
+      margin-right:9.4em;
+    }
+    &-socials{
+      display:flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width:100%;
+    }
+  }
+}
+
+@include respond-to(tablet-screens){
+  .footer{
+    &__outer{
+      background-color: var(--color-black);
+      padding: 5.7em 14em 7em 14em;
+    }
+    &__inner{
+      max-width: 1119px;
+      margin:0 auto;
+    }
+    &__contents{
+      color:var(--color-white);
+      display:flex;
+      justify-content: space-between;
+    }
+    
+    &-links__container{
+      display:flex;
+      flex-grow:1;
+      margin-left: 23.4em;  
+      // margin-right:6.7em;
+      justify-content: space-between;
+    }
+    &-features, &-resources, &-company{
+      h4{
+        font-size:1.5rem;
+        letter-spacing: .05rem;
+      }
+      ul{
+        list-style: none;;
+        width:max-content;
+      }
+      li{
+        font-size: 1.44rem;
+        &:not(:first-child){
+          margin-top:.7em;
+        }
+      }
+      li:first-child {
+        margin-top:1.4em;
+      }
+    }
+    &-resources{
+      margin-left:7em;
+    }
+    &-company{
+      margin-left:9.4em;
+      margin-right:9.4em;
+    }
+    &-socials{
+      display:flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width:100%;
+    }
+  }
+}
