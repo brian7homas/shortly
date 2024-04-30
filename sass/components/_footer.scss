@@ -60,7 +60,7 @@
   .footer{
     &__outer{
       background-color: var(--color-black);
-      padding: 5.7em 14em 7em 14em;
+      padding: 5.7em 3em 7em 3em;
     }
     &__inner{
       max-width: 1119px;
@@ -75,9 +75,9 @@
     &-links__container{
       display:flex;
       flex-grow:1;
-      margin-left: 23.4em;  
-      // margin-right:6.7em;
+      margin-left: 14.4em;  
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     &-features, &-resources, &-company{
       h4{
@@ -98,18 +98,97 @@
         margin-top:1.4em;
       }
     }
+    &-features{
+      margin-bottom:4em;
+    }
     &-resources{
-      margin-left:7em;
+      // margin-left:7em;
+      margin-bottom:4em;
     }
     &-company{
-      margin-left:9.4em;
-      margin-right:9.4em;
+      margin-bottom:4em;
     }
     &-socials{
+      margin-top:3em;
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+      width:100%;
+      :not(:last-child){
+        margin-right:1.5em;
+      }
+    }
+  }
+}
+
+@include respond-to(mobile-screens){
+  .footer{
+    &__outer{
+      background-color: var(--color-black);
+      padding: 5em 3em;
+    }
+    &__inner{
+      max-width: 1119px;
+      margin:0 auto;
+    }
+    &__contents{
+      color:var(--color-white);
       display:flex;
       justify-content: space-between;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    &-links__container{
+      display:flex;
+      flex-grow:1;
+      margin-left: 0;  
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &-features, &-resources, &-company{
+      h4{
+        font-size:1.5rem;
+        letter-spacing: .05rem;
+      }
+      ul{
+        list-style: none;;
+        width:max-content;
+      }
+      li{
+        font-size: 1.44rem;
+        &:not(:first-child){
+          margin-top:.7em;
+        }
+      }
+      li:first-child {
+        margin-top:1.6em;
+      }
+    }
+    &-features{
+      margin-bottom:3.6em;
+    }
+    &-resources{
+      margin-bottom:3.4em;
+    }
+    &-company{
+      margin-bottom:4em;
+    }
+    &-socials{
+      margin-top:0;
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
       width:100%;
+      :not(:last-child){
+        margin-right:2.1em;
+      }
+    }
+    &-logo{
+      margin-bottom:3.9em;
     }
   }
 }
