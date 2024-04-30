@@ -1,4 +1,4 @@
-@include respond-to(wide-screens){
+@include respond-to(desktop-screens){
   .boost{
     &__outer{
       background:var(--color-violet) url('/images/bg-boost-desktop.svg');
@@ -12,7 +12,34 @@
     &__contents{
       color:var(--color-white);
       text-align: center;
-      padding:5em 0;
+      padding:5.5em 0;
+    }
+    
+    &-headline{
+      font-size: 3.8rem;
+    }
+    &-cta{
+      @include buttons-rad2();
+      margin-top:1.4em;
+    }
+  }
+}
+
+@include respond-to(tablet-screens){
+  .boost{
+    &__outer{
+      background:var(--color-violet) url('/images/bg-boost-desktop.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__inner{
+      max-width: 1119px;
+      margin:0 auto;
+    }
+    &__contents{
+      color:var(--color-white);
+      text-align: center;
+      padding:5.5em 0;
     }
     
     &-headline{

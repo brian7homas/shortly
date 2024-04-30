@@ -20,3 +20,10 @@ main{
   position: relative;
   overflow:hidden;
 }
+
+.attribution{
+  background-color: var(--color-cyan);
+  color:var(--color-white);
+  display:flex;
+  justify-content: center;
+}
