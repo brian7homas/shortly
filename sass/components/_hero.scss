@@ -13,12 +13,14 @@
     }
     &__content{
       max-width: 40vw;
+      z-index: 2;
     }
     // *ELS
     &-image{
       right: -11em;
       position: absolute;
       top: 6.6em;
+      z-index: -1;
     }
     &-headline{
       font-size: 7.7rem;
@@ -61,6 +63,7 @@
       right: -11em;
       position: absolute;
       top: 6.6em;
+      z-index: -1;
     }
     &-headline{
       font-size: 7.7rem;
@@ -99,15 +102,17 @@
       justify-content: flex-end;
     }
     &__content{
-      max-width: 75vw;
+      max-width: 65vw;
       position:relative;
       z-index: 2;
     }
     // *ELS
     &-image{
-      left:60%;
+      left:40%;
       position: absolute;
       top: 6.6em;
+      z-index: -1;
+      transform:scale(.85)
     }
     &-headline{
       font-size: 7.7rem;
