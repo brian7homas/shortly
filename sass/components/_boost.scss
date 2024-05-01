@@ -1,7 +1,7 @@
 @include respond-to(desktop-screens){
   .boost{
     &__outer{
-      background:var(--color-violet) url('/images/bg-boost-desktop.svg');
+      background:var(--color-violet) url('images/bg-boost-desktop.svg');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -28,7 +28,7 @@
 @include respond-to(tablet-screens){
   .boost{
     &__outer{
-      background:var(--color-violet) url('/images/bg-boost-desktop.svg');
+      background:var(--color-violet) url('images/bg-boost-desktop.svg');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -55,7 +55,7 @@
 @include respond-to(mobile-screens){
   .boost{
     &__outer{
-      background:var(--color-violet) url('/images/bg-boost-desktop.svg');
+      background:var(--color-violet) url('images/bg-boost-desktop.svg');
       background-repeat: no-repeat;
       background-size: cover;
     }

@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "proxy": "lcp --proxyUrl https://cleanuri.com",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
-    "dev": "npm-run-all --parallel devserver watch:sass",
-    
+    "dev": "npm-run-all --parallel proxy devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
@@ -19,9 +19,12 @@
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "concat": "^1.0.3",
+    "local-cors-proxy": "^1.1.0",
     "node-sass": "^9.0.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^11.0.0"
+  },
+  "dependencies": {
+    "uniq": "^1.0.1"
   }
 }
-
